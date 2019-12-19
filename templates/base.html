@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+      {% block title %}
+       Asick Ahamed - Backend Demo
+      {% endblock %}
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <nav class="sst-bordered" id="main-header">
+      <span>
+        <span class="product-name unselectable">
+         Asick Ahamed
+        </span>
+      </span>
+    </nav>
+    {% block content %}
+    {% endblock %}
+  </body>
+</html>
+ 
