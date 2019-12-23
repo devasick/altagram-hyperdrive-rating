@@ -6,22 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>
       {% block title %}
-       Asick Ahamed - Backend Demo
+        Altagram - Author Asick Ahamed
       {% endblock %}
     </title>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.png') }}">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/materialize.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/jquery-1.8.3.min.js') }}"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+  
+     
   </head>
   <body>
-    <nav class="sst-bordered" id="main-header">
-      <span>
-        <span class="product-name unselectable">
-         Asick Ahamed
-        </span>
-      </span>
-    </nav>
+    {% include "header.html" %} 
+     
     {% block content %}
     {% endblock %}
+    <script type="text/javascript" src="{{ url_for('static', filename='js/materialize.min.js') }}"></script>
+    
+    {% include "footer.html" %}  
   </body>
 </html>
  

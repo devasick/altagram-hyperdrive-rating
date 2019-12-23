@@ -1,7 +1,31 @@
 {% extends "base.html" %}
 {% block content %}
 
+<section class="content">
+<div class="container">
+<div class="row">
+	<h1>Hyperdrive Rating</h1>
+{% for starship in data['starships'] %}
+    <div class="col s3">
+    <div class="name">{{starship["name"]}}</div>
+    <div><label>Hyperdrive Rating:</label> {{starship["hyperdrive"]}}</div>
 
+    </div>
+ {% endfor %}
+</div>
+ <h1>Hyperdrive Without Rating</h1>
+
+ {% for starship in data['starships_unknown_hyperdrive'] %}
+    <div class="name">{{starship["name"]}}</div> 
+ {% endfor %}
+ <hr>
+     <div class="footer-btn" style="text-align: center">
+      <a href="http://0.0.0.0:7410/results" target="_blank" class="btn-large waves-effect waves-light red">Click Result 
+      here</a>
+      </div>
+
+      </div>
+</section>
 <!-- Your code here ! -->
 
 

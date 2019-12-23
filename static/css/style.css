@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #444;
+  background:#eee;  
+}
+/* Header  start here */
+nav{
+  margin: 0; 
+  background: #232526;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 112px;
+  line-height: 112px;
+  padding: 0 10px 0 10px;
+}
+.brand-logo img{
+  padding: 14px 5px 5px 5px;
+  width: 85%;
+  } 
+#nav-mobile a{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+.jumbotron h1{font-size: 3rem;} 
+.jumbotron h2{font-size: 2rem;} 
+.jumbotron .container-fluid{padding: 25px;}
+.btn-large{
+  background: #8e1a35;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #F45C43, #8e1a35);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #F45C43, #8e1a35); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.jumbotron { background-size: cover;background-repeat: no-repeat; padding: 10px;}
+.desc{
+  text-align: center;
+  color: #fff;
+  padding: 15px;
+}
+/* bar chart */
+
+ 
+
+
+ 
+/*Section*/
+section.content h1{text-transform:uppercase;font-size:3em;}
+.name{font-size: 1.2em;font-weight: bold;}
+.footer-btn{margin-top: 10px;margin-bottom: 10px;}
+
+
+/* footer */
+footer{
+  background: #000 !important;  
+}
+.footer-copyright{
+  background: #191919 !important;  
+}
