@@ -1,8 +1,10 @@
+# Author: Asick Ahamed
+# website: www.asickweb.com
 import flask
 import requests
 import json
 from flask import jsonify
-BASE_URL = 'https://swapi.co/api/starships/?page=3'
+BASE_URL = 'https://swapi.co/api/starships/?page=2' #swapi json url 
  
 
 
@@ -17,7 +19,7 @@ def create_app():
         data = requests.get(url, headers=headers).json()
         
         swapi_dict = {'starships':[], 'starships_unknown_hyperdrive':[]} 
-        
+    
 
         for result in data['results']:
             
@@ -32,14 +34,16 @@ def create_app():
                 swapi_dict['starships_unknown_hyperdrive'].insert(0, {'name':result['name']})
  
             
-        print(swapi_dict) 
+        print(json.dumps(swapi_dict, indent=2, sort_keys=False)) 
         return flask.render_template('index.html',data=swapi_dict)
 
     @app.route('/results', methods=['GET', 'POST'])
     def data():
         index() 
-       
-        return swapi_dict
+
+        output = json.dumps(swapi_dict, indent=2, sort_keys=False) 
+        # data will display on the browser
+        return output
 
     return app
 

@@ -1,3 +1,7 @@
+/*
+# Author: Asick Ahamed
+# website: www.asickweb.com
+*/
 body {
   margin: 0;
   padding: 0;
@@ -32,15 +36,17 @@ nav{
   background: -webkit-linear-gradient(to bottom, #F45C43, #8e1a35);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #F45C43, #8e1a35); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-.jumbotron { background-size: cover;background-repeat: no-repeat; padding: 10px;}
+.jumbotron { 
+  background-size: cover;background-repeat: no-repeat; 
+  padding: 10px;
+  top: 39px;
+  position: relative;
+}
 .desc{
   text-align: center;
   color: #fff;
   padding: 15px;
 }
-/* bar chart */
-
- 
 
 
  
